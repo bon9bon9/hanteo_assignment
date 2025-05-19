@@ -17,7 +17,7 @@ public class Main {
         categoryService.indexName();
         categoryService.indexParentIdx();
         // 검색
-        // 1. 인데스로 검색하는 경우
+        // 1. 인덱스로 검색하는 경우
          List<CategoryEntity> searchData = categoryService.getByIdx(1);
         // 2. 이름으로 검색하는 경우
         // List<CategoryEntity> searchData = categoryService.getByName("공지사항");
