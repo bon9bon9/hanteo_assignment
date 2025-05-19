@@ -17,12 +17,12 @@ public class Main {
         categoryService.indexName();
         categoryService.indexParentIdx();
         // 검색
-        // 1. 아이디로 검색하는 경우
-        // List<CategoryEntity> searchByIdx = categoryService.getByIdx(3);
+        // 1. 인데스로 검색하는 경우
+         List<CategoryEntity> searchData = categoryService.getByIdx(1);
         // 2. 이름으로 검색하는 경우
-        List<CategoryEntity> searchByName = categoryService.getByName("공지사항");
+        // List<CategoryEntity> searchData = categoryService.getByName("공지사항");
         // 자식, 부모 정보 추가
-        List<CategoryDto> results = categoryService.addDetail(searchByName);
+        List<CategoryDto> results = categoryService.addDetail(searchData);
         // 출력
         ObjectMapper mapper = new ObjectMapper();
         String json = mapper.writeValueAsString(results);
