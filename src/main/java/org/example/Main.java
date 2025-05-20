@@ -18,7 +18,7 @@ public class Main {
         categoryService.indexParentIdx();
         // 검색
         // 1. 인덱스로 검색하는 경우
-         List<CategoryEntity> searchData = categoryService.getByIdx(1);
+        List<CategoryEntity> searchData = categoryService.getByIdx(1);
         // 2. 이름으로 검색하는 경우
         // List<CategoryEntity> searchData = categoryService.getByName("공지사항");
         // 자식, 부모 정보 추가
